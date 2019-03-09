@@ -55,17 +55,17 @@ def contains1(array):
 root = tk.Tk()
 root.title("Object Counting")
 
-# get dimensions of the users display
+# get dimensions of the user's display
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
 
 print("Screen Width: {}px\nScreen Height: {}px".format(screen_width, screen_height))
 
-# windows dimensions
+# window's dimensions
 window_width = int(screen_width / 1.5)
 window_height = int(screen_height / 1.5)
 
-# variables to center the windows when its opened
+# variables to center the main window when it's opened
 center_x = int((screen_width - window_width) / 2)
 center_y = int((screen_height - window_height) / 2)
 size = "{}x{}+{}+{}".format(window_width, window_height, center_x, center_y)
@@ -124,7 +124,7 @@ def openImage():
 
 def scale(img):
     # 1- find the greater dimension of the image, height or width?
-    # 2- change the greater dimension of the image to the corresponding dimension of the frame
+    # 2- change the greater dimension of the image as the corresponding dimension of the frame
     # e.g if the image is long and narrow, set the image height as the height of the frame and reset
     # the width value while protecting the aspect ratio
     #
@@ -142,7 +142,7 @@ def scale(img):
     img = img.resize((x, y))  # rescaled image
     return img
 
-
+# convert the array to binary array. if the rgb value is below a cer
 def binaryImage(image):
     image_array = np.array(image.convert("L"))
     np2binary(image_array)
@@ -188,8 +188,9 @@ tsf_result_frame = Frame(frame, width=grid_cell_width, height=grid_cell_height, 
 tsf_result_frame.grid(row=2, column=2)
 
 
+# create random image
 def createRandom():
-    def randomLetter():
+    def randomLetter(): # create random letter
         return random.choice(string.ascii_letters)  # return random letter
 
     img = Image.new('RGB', (200, 200), color=(0, 0, 0))
