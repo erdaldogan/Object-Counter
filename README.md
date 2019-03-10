@@ -81,3 +81,16 @@ Output of the program is a ```.csv``` file including file name, which algorithm 
 | File: NCC5_ITER48.png  |  Algorithm: TSF      |  NCC: 5  |  Iterations: 14 |
 | File: random-out.jpg   |  Algorithm: TSF      |  NCC: 42 |  Iterations: 8  |
 | File: random-out.jpg   |  Algorithm: TSF      |  NCC: 42 |  Iterations: 8  |
+
+
+### TODO
+
+- [ ] delete previous image before opening a new picture
+- [ ] image saved notification pop-up
+- [ ] improve the draw feature
+- [ ] date stamp to the output file
+- [ ] separate front-end and back-end
+
+---------------------------------------------------
+
+**All of the images, quoted sentences and materials used in README.md are from the slides of [Prof. Dr. Muhittin Gokmen](https://www.muhittingokmen.com)** 
