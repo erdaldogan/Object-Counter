@@ -20,4 +20,22 @@ Delete 1-valued-pixel if it has the following neighborhood <br/> ![Levialdi Dele
 Article: [Gökmen, Muhittin & W Hall, Richard. (1990). Parallel shrinking algorithms using 2-subfield approaches. Computer Vision, Graphics, and Image Processing. 52. 191-209. ](http://dx.doi.org/10.1016/0734-189X(90)90054-Y)
 
 
->In this approach, the image space is partitioned like a checkerboard into two disjoint sets
+>In this approach, the image space is partitioned like a checkerboard into two disjoint sets  <p align="center"> <img src="https://raw.githubusercontent.com/erdaldogan/Object-Counter/master/docs/tsf_subfields.png" width="499"></p> where 1 and 2 denote the two distinct subfields
+
+Before going into the conditions, we have to define some variables.
+
+* 8-neighbors of the pixel p = Surrounding pixels of p.
+<p align="center"> <img src="https://raw.githubusercontent.com/erdaldogan/Object-Counter/master/docs/8neighbors.png" width="100"> <br/> p1, p2, p3, ...., pn are 8 neighbors of p.
+</p>
+
+* B(p) = Number of 1's in pixel p's 8-neighborhood.
+* C(p) = Number of distinct sets of 1's in pixel p's 8-neighborhood. *(Can be calculated from T(p))*
+* T(p) = Number of 0-to-1 transition in the 8-neighbors.
+
+For instance;
+<p align="center">
+<img src="https://raw.githubusercontent.com/erdaldogan/Object-Counter/master/docs/tsf_example.png" width="450">
+</p>
+
+
+### Deletion Condition
