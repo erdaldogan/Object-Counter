@@ -3,6 +3,8 @@ simple python program that counts the objects in an image file
 
 # Algorithms
 ## Levialdi’s Shrinking Algorithm
+Article: [S. Levialdi. 1972. On shrinking binary picture patterns. Commun. ACM 15, 1 (January 1972), 7-10.](http://dx.doi.org/10.1145/361237.361240)
+
 
 > Levialdi’s shrinking algorithm shrinks every connected component in a binary image to a single isolated point to the upper right corner of its bounding rectangle and erases it.
 
@@ -14,3 +16,8 @@ Delete 1-valued-pixel if it has the following neighborhood <br/> ![Levialdi Dele
 [lev_del]: https://raw.githubusercontent.com/erdaldogan/Object-Counter/master/docs/levdel.png "Logo Title Text 2"
 [lev_aug]: https://raw.githubusercontent.com/erdaldogan/Object-Counter/master/docs/levaug.png "Logo Title Text 2"
 
+## Two Sub-fields Algorithm
+Article: [Gökmen, Muhittin & W Hall, Richard. (1990). Parallel shrinking algorithms using 2-subfield approaches. Computer Vision, Graphics, and Image Processing. 52. 191-209. ](http://dx.doi.org/10.1016/0734-189X(90)90054-Y)
+
+
+>In this approach, the image space is partitioned like a checkerboard into two disjoint sets
