@@ -64,4 +64,18 @@ A pixel p = 0 is augmented (changed to 1) if both of the following conditions ar
 1. C(p) = 1
 2. p8 = p2 = 1 or p8 = p6 = 1 
 
-Examples that satisfy deletion condition can be found at *docs/tsf_aug_examples.png* 
+Examples that satisfy augmentation condition can be found at *docs/tsf_aug_examples.png* 
+
+## Output
+Output of the program is a ```.csv``` file including file name, which algorithm is used, number of objects and the number of iterations. 
+
+
+| File: NCC16_ITER84.png |  Algorithm: Levialdi |  NCC: 16 |  Iterations: 84 |
+| ---------------------- | -------------------- | -------- | --------------- |
+| File: NCC16_ITER84.png |  Algorithm: TSF      |  NCC: 16 |  Iterations: 34 |
+| File: random-out.jpg   |  Algorithm: Levialdi |  NCC: 32 |  Iterations: 12 |
+| File: random-out.jpg   |  Algorithm: TSF      |  NCC: 32 |  Iterations: 6  |
+| File: NCC5_ITER48.png  |  Algorithm: Levialdi |  NCC: 5  |  Iterations: 47 |
+| File: NCC5_ITER48.png  |  Algorithm: TSF      |  NCC: 5  |  Iterations: 14 |
+| File: random-out.jpg   |  Algorithm: TSF      |  NCC: 42 |  Iterations: 8  |
+| File: random-out.jpg   |  Algorithm: TSF      |  NCC: 42 |  Iterations: 8  |
