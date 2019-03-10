@@ -93,4 +93,4 @@ Output of the program is a ```.csv``` file including file name, which algorithm 
 
 ---------------------------------------------------
 
-**All of the images, quoted sentences and materials used in README.md are from the slides of [Prof. Dr. Muhittin Gokmen](https://www.muhittingokmen.com)** 
+**All of the images, quoted sentences and materials (excluding ```.gifs``` and ```output.csv```) used in README.md are from the slides of [Prof. Dr. Muhittin Gokmen](https://www.muhittingokmen.com)** 
