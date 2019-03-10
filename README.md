@@ -10,17 +10,14 @@ Article: [S. Levialdi. 1972. On shrinking binary picture patterns. Commun. ACM 1
 
 Deletion Condition | Augmentation Condition
 :------------------: | :----------------------:
-Delete 1-valued-pixel if it has the following neighborhood <br/> ![Levialdi Deletion][lev_del] | Change a 0-valued-pixel p to a 1-valued pixel if it has a following neighborhood <br/> ![Levialdi Augmentation][lev_aug]
+Delete 1-valued-pixel if it has the following neighborhood <br/> <p align="center"> <img src="https://raw.githubusercontent.com/erdaldogan/Object-Counter/master/docs/levdel.png" width="120"></p> | Change a 0-valued-pixel p to a 1-valued pixel if it has a following neighborhood <br/> <p align="center"> <img src="https://raw.githubusercontent.com/erdaldogan/Object-Counter/master/docs/levaug.png" width="120"></p> 
 
-
-[lev_del]: https://raw.githubusercontent.com/erdaldogan/Object-Counter/master/docs/levdel.png "Logo Title Text 2"
-[lev_aug]: https://raw.githubusercontent.com/erdaldogan/Object-Counter/master/docs/levaug.png "Logo Title Text 2"
 
 ## Two Sub-fields Algorithm
 Article: [Gökmen, Muhittin & W Hall, Richard. (1990). Parallel shrinking algorithms using 2-subfield approaches. Computer Vision, Graphics, and Image Processing. 52. 191-209. ](http://dx.doi.org/10.1016/0734-189X(90)90054-Y)
 
 
->In this approach, the image space is partitioned like a checkerboard into two disjoint sets  <p align="center"> <img src="https://raw.githubusercontent.com/erdaldogan/Object-Counter/master/docs/tsf_subfields.png" width="499"></p> where 1 and 2 denote the two distinct subfields
+>In this approach, the image space is partitioned like a checkerboard into two disjoint sets  <p align="center"> <img src="https://raw.githubusercontent.com/erdaldogan/Object-Counter/master/docs/tsf_subfields.png" width="300"></p> where 1 and 2 denote the two distinct subfields
 
 Before going into the conditions, we have to define some variables.
 
@@ -39,3 +36,18 @@ For instance;
 
 
 ### Deletion Condition
+A pixel p = 1 is deleted
+1. B(p) = 0 (i.e., isolated point), or
+2. All of the following conditions are satisfied:
+    -   C(p) = 1
+    -   If B(p) = 1 then p1 = p7 = 0
+    -   p’s 8-neighborhood contains a 3-length or longer run of 4-connected zeros
+  
+Examples that satisfy deletion condition can be found at *docs/tsf_del_examples.png* 
+
+### Augmentation Condition
+A pixel p = 0 is augmented (changed to 1) if both of the following conditions are satisfied
+1. C(p) = 1
+2. p8 = p2 = 1 or p8 = p6 = 1 
+
+Examples that satisfy deletion condition can be found at *docs/tsf_aug_examples.png* 
