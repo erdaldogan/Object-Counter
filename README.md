@@ -66,6 +66,8 @@ A pixel p = 0 is augmented (changed to 1) if both of the following conditions ar
 
 Examples that satisfy augmentation condition can be found at *docs/tsf_aug_examples.png* 
 
+*Important Note: In both of the algorithms variable that holds number of objects needs to be incremented every time the programs encounters with an isolated pixel(i.e, all of the 8-neighbors are 0 or B(p) = 0)*
+
 ## Output
 Output of the program is a ```.csv``` file including file name, which algorithm is used, number of objects and the number of iterations. 
 
