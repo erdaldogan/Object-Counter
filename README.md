@@ -3,7 +3,7 @@ simple python program that counts the objects in an image file
 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/erdaldogan/Object-Counter/master/docs/whole_window.gif" width="420">
+<img src="https://raw.githubusercontent.com/erdaldogan/Object-Counter/master/docs/whole_window.gif" width="800">
 </p>
 
 
