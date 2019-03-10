@@ -6,6 +6,13 @@ simple python program that counts the objects in an image file
 <img src="https://raw.githubusercontent.com/erdaldogan/Object-Counter/master/docs/whole_window.gif" width="420">
 </p>
 
+
+<!---
+<p align="center">
+<img src="https://raw.githubusercontent.com/erdaldogan/Object-Counter/master/docs/levialdi_demo.gif" width="420"> <img src="https://raw.githubusercontent.com/erdaldogan/Object-Counter/master/docs/tsf_demo.gif" width="420">
+</p>
+-->
+
 [Original Image](https://raw.githubusercontent.com/erdaldogan/Object-Counter/master/docs/NCC16_ITER84.png)
 
 # Algorithms
